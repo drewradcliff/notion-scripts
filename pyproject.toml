@@ -7,6 +7,7 @@ authors = ["Drew Radcliff <drew.radcliff@blindrobot.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 notion = "^0.0.27"
+python-dotenv = "^0.15.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -14,3 +15,6 @@ pytest = "^5.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run = "main:script"
